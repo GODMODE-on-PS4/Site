@@ -17,8 +17,18 @@ h1 {
   color: #f39c12;
 }
 
-#products {
+#products, #cart {
   padding: 20px;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  background: #1f1f1f;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #f39c12aa;
+}
+
+h2 {
+  color: #f39c12;
+  margin-bottom: 15px;
 }
 
 .product-list {
@@ -29,12 +39,13 @@ h1 {
 }
 
 .product {
-  background: #1f1f1f;
+  background: #2c2c2c;
   border-radius: 8px;
   padding: 15px;
   width: 220px;
   box-shadow: 0 0 10px #f39c12aa;
   transition: transform 0.2s;
+  text-align: center;
 }
 
 .product:hover {
@@ -48,4 +59,43 @@ h1 {
 
 .product p {
   margin: 8px 0;
+}
+
+button {
+  background-color: #f39c12;
+  border: none;
+  color: #121212;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #d17e0f;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-items li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  background: #333;
+  padding: 8px;
+  border-radius: 4px;
+  align-items: center;
+}
+
+#cart-items button {
+  padding: 4px 8px;
+  font-size: 0.8rem;
+}
+
+#checkout-btn {
+  margin-top: 10px;
+  width: 100%;
 }
